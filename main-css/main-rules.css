@@ -5,12 +5,10 @@
   box-sizing: border-box;
 }
 :root{
---main-yellow: #F6AA1C;
---main-brown: #621708;
+  --main-yellow: #ED1C24;
+  --main-brown: white;
 }
 body{
-  width: 100vw;
-  min-height: 100vh;
   background-image: url('../logo-images/shoku-japanese-steak-house-hero-home-1920w.jpg');
   background-size:cover;
   background-repeat: no-repeat;
