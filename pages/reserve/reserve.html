@@ -10,8 +10,9 @@
 <body>
   <div class="navbar">
     <div class="navbar-logo">
-      <img class="navbar-logo-img" src="../../logo-images/fork-knife-logo.png">
-      <!-- <p class="navbar-logo-text">Steak Time Restaurant</p> -->
+      <a href="../../index.html">
+        <img class="navbar-logo-img" src="../../logo-images/fork-knife-logo.png">
+      </a>
     </div>
       <div class="navbar-menu">
         <input type="checkbox" id="checkbox">
@@ -35,21 +36,32 @@
   </div>
   </div>
   <div class="landing-page">
-
     <p>BOOK NOW</p>
     <form>
       <label>
         <span>Name:</span>
-        <input type="text" name="" id="form-name" placeholder="Enter Your Name" required>
+        <input type="text" name="entry.1942114490" id="form-name" placeholder="Enter Your Name" required autocomplete="off">
+        <p id="wrong-name"></p>
       </label>
       <label>
         <span>Phone Number:</span>
-        <input type="tel" name="" id="form-number" placeholder="Enter Your Phone Number" required>
+        <input type="tel" name="entry.1709168447" id="form-number" minlength="11"  placeholder="Enter Your Phone Number" required autocomplete="off">
+        <p id="wrong-number"></p>
+      </label>
+      <label>
+        <span>Date:</span>
+        <input type="date" name="entry.1914287024" id="form-date" placeholder="Reserve Date" required>
+        <p id="wrong-date"></p>
+      </label>
+      <label>
+        <span>Time:<span> we open from 9am till 12pm</span></span>
+        <input type="time" name="entry.1806384136" min="09:00" max="23:59" id="form-time" placeholder="Reserve Time" required value="09:00">
+        <p id="wrong-time"></p>
       </label>
       <label>
         <span>How Many Persons:</span>
-        <select name="" id="form-select" required>
-          <option value="0">--Select Number Of Persons--</option>
+        <select name="entry.169645066" id="form-select" required>
+          <option value="">--Select Number Of Persons--</option>
           <option value="1-person">1 Person</option>
           <option value="2-persons">2 Persons</option>
           <option value="3-persons">3 Persons</option>
@@ -61,13 +73,11 @@
           <option value="9-persons">9 Persons</option>
           <option value="10-persons">10 Persons</option>
         </select>
+        <p id="wrong-select"></p>
       </label>
       <button id="form-button">RESERVE</button>
+      <p id="wrong-submit"></p>
     </form>
-    <!-- <div></div>
-    <div class="landing-page-div-2">
-      <img src="../../logo-images/fork-knife-logo.png">
-    </div> -->
   </div>
   
 

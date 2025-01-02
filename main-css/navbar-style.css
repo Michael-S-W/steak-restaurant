@@ -1,7 +1,7 @@
 @import url("./fonts.css");
 .navbar{
   width: 100vw;
-  height: 100px;
+  height: 70px;
   position: fixed;
   z-index: 999;
   top: 0;
@@ -9,28 +9,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
-  padding: 20px 40px;
-  background-color: black;
-  box-shadow:  0 0 10px black;
+  color: var(--main-white);
+  padding: 5px 40px;
+  background-color: var(--main-dark);
+  box-shadow:  0 0 10px var(--main-dark);
   backdrop-filter: blur(5px);
   font-family:Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .navbar-logo{
-  width: 150px;
+  /* width: 150px; */
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow( 0px 0px 3px black);
+  filter: drop-shadow( 0px 0px 3px var(--main-dark));
   
 }
-
+.navbar-logo>a{
+  /* width: 150px; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow( 0px 0px 3px var(--main-dark));
+}
 .navbar-logo-img{
   margin: 0 auto;
   height: 100%;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .navbar-logo-text{
@@ -54,7 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow( 0px 0px 3px black);
+  filter: drop-shadow( 0px 0px 3px var(--main-dark));
 }
 
 .navbar-menu .navbar-list li{
@@ -70,7 +77,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  background-color: black;
+  background-color: var(--main-dark);
   /* background-color: var(--main-brown); */
   width: 100%;
   height: 100%;
@@ -114,16 +121,16 @@
   top: 100px;
   right: -200px;
   width: 0px;
-  background-color: black;
+  background-color: var(--main-dark);
   padding: 20px;
-  box-shadow:  0 0 10px black;
+  box-shadow:  0 0 10px var(--main-dark);
   transition: all 0.3s ease-in-out;
 }
 
 .navbar-menu .sidebar-list li{
   list-style-type: none;
   width: 100%;
-  filter: drop-shadow( 0px 0px 3px black);
+  filter: drop-shadow( 0px 0px 3px var(--main-dark));
 }
 
 .navbar-menu .sidebar-list li a{
@@ -137,13 +144,13 @@
 
 .navbar-list li a.open,
 .sidebar-list li a.open{
-  background-color: black;
+  background-color: var(--main-dark);
   color: var(--main-brown);
 }
 @media (max-width: 768px) {
   .navbar{
-    height: 70px;
-    padding: 10px 20px;
+    /* height: 70px; */
+    padding: 5px 20px;
   }
   .navbar-menu .menu-toggler{
     display: flex;

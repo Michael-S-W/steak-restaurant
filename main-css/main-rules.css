@@ -7,6 +7,12 @@
 :root{
   --main-yellow: #ED1C24;
   --main-brown: white;
+  --main-red: #ED1C24;
+  --main-white: rgb(235, 235, 235);
+  --main-dark: #130500;
+}
+html {
+  font-size: 62.5%
 }
 body{
   background-image: url('../logo-images/shoku-japanese-steak-house-hero-home-1920w.jpg');
