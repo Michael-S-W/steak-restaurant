@@ -81,6 +81,23 @@ font-weight: 400;
 }
 
 
+.section.social{
+  flex-direction: row !important;
+}
+
+.section.social a{
+text-decoration: none;
+color: var(--main-dark);
+}
+.section.social svg:hover{
+  cursor: pointer;
+  fill: var(--main-red);
+}
+
+.section.map{
+  flex-direction: column !important;
+}
+
 
 @keyframes fade-in {
   0%{
@@ -115,6 +132,6 @@ font-weight: 400;
   .landing-page .content .section .section-text,
 .landing-page .content .section .section-image{
   width: 100%;
-  /* padding: 30px; */
 }
+
 }
